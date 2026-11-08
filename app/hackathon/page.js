@@ -11,7 +11,7 @@ export const metadata = {
     title: "IIT Hyderabad CyberShield Hackathon 2026 • National Finalist | Digvijay Singh",
     description:
       "The journey of leading Team Muledna at the CyberShield Hackathon 2026 Grand Finale at IIT Hyderabad, competing against 3,000+ teams nationwide.",
-    url: "https://imdigvijaysingh.com/hackathon",
+    url: "https://digvijaysingh-one.vercel.app/hackathon",
   },
 };
 

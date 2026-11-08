@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://imdigvijaysingh.com"><img src="https://img.shields.io/badge/Live_Portfolio-imdigvijaysingh.com-9333ea?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Website" /></a>
+  <a href="https://digvijaysingh-one.vercel.app"><img src="https://img.shields.io/badge/Live_Portfolio-digvijaysingh--one.vercel.app-9333ea?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Website" /></a>
   <a href="https://github.com/imdigvijaysingh"><img src="https://img.shields.io/badge/GitHub-imdigvijaysingh-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://www.linkedin.com/in/digvijaysinghpundir"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
@@ -180,7 +180,7 @@ vercel --prod
 
 ## 📬 Contact & Connect
 
-- **Portfolio**: [imdigvijaysingh.com](https://imdigvijaysingh.com)
+- **Portfolio**: [digvijaysingh-one.vercel.app](https://digvijaysingh-one.vercel.app)
 - **Email**: [digvijaysinghpundir18@gmail.com](mailto:digvijaysinghpundir18@gmail.com)
 - **LinkedIn**: [linkedin.com/in/digvijaysinghpundir](https://www.linkedin.com/in/digvijaysinghpundir)
 - **GitHub**: [github.com/imdigvijaysingh](https://github.com/imdigvijaysingh)

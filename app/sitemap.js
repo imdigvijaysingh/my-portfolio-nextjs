@@ -1,7 +1,7 @@
 import { projects } from "@/data/projectsData";
 
 export default function sitemap() {
-  const baseUrl = "https://imdigvijaysingh.com";
+  const baseUrl = "https://digvijaysingh-one.vercel.app";
   const currentDate = new Date().toISOString();
 
   const projectRoutes = projects.map((project) => ({

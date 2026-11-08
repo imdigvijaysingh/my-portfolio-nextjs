@@ -11,7 +11,7 @@ export const metadata = {
     title: "Work Experience & Career Milestones | Digvijay Singh",
     description:
       "Explore Digvijay Singh's professional software engineering experience, freelance client projects, web developer internships, and technical impact metrics.",
-    url: "https://imdigvijaysingh.com/experience",
+    url: "https://digvijaysingh-one.vercel.app/experience",
   },
 };
 

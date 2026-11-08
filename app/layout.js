@@ -24,7 +24,7 @@ const caveat = Caveat({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://imdigvijaysingh.com"),
+  metadataBase: new URL("https://digvijaysingh-one.vercel.app"),
   title: {
     default: "Digvijay Singh | AI Full Stack Engineer (React.js, Node.js, Express, MongoDB)",
     template: "%s | Digvijay Singh",
@@ -46,7 +46,7 @@ export const metadata = {
     "ERP Web Applications",
     "JavaScript Developer",
   ],
-  authors: [{ name: "Digvijay Singh", url: "https://imdigvijaysingh.com" }],
+  authors: [{ name: "Digvijay Singh", url: "https://digvijaysingh-one.vercel.app" }],
   creator: "Digvijay Singh",
   publisher: "Digvijay Singh",
   robots: {
@@ -63,7 +63,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://imdigvijaysingh.com",
+    url: "https://digvijaysingh-one.vercel.app",
     siteName: "Digvijay Singh Portfolio",
     title: "Digvijay Singh | AI Full Stack Engineer",
     description:
@@ -97,7 +97,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Digvijay Singh",
   jobTitle: "AI Full Stack Engineer",
-  url: "https://imdigvijaysingh.com",
+  url: "https://digvijaysingh-one.vercel.app",
   sameAs: [
     "https://github.com/imdigvijaysingh",
     "https://linkedin.com/in/digvijaysinghpundir",
