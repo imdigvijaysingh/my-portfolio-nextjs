@@ -99,6 +99,16 @@ body {
   width: 8px;
   height: 8px;
 }
+
+/* Utility to hide scrollbars for horizontal pill tracks */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }

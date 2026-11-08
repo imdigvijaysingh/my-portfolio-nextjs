@@ -29,13 +29,13 @@ const projects = [
     tagline:
       "High-fidelity 3D cosmetics landing page built with Next.js, real-time WebGL shader lighting, rotational arcs, and interactive shade customization.",
     category: "3D & Creative Web",
-    badge: "3D Interactive Web Experience",
+    badge: "3D Web Experience",
     coverImage: lipstick1,
     techStack: ["Next.js", "Three.js", "React Three Fiber", "WebGL", "Tailwind CSS", "Framer Motion"],
     highlights: ["60 FPS 3D Engine", "Draco Mesh Compression", "Interactive 3D Twist"],
     liveUrl: "https://github.com/imdigvijaysingh",
     githubUrl: "https://github.com/imdigvijaysingh",
-    statusBadge: "3D Experience ✨",
+    statusBadge: "Next.js ✦",
     glowColor: "from-rose-500/10 via-red-500/5 to-transparent",
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     tagline:
       "Modern consumer electronics storefront with 8-department filtering, curated brand collections, persistent cart, and Stripe checkout.",
     category: "E-Commerce",
-    badge: "Full-Stack E-Commerce & Retail",
+    badge: "E-Commerce Platform",
     coverImage: ecommerce1,
     techStack: ["Next.js", "React 18", "Node.js", "Express", "MongoDB", "Stripe API", "Redux"],
     highlights: ["8 Category Filters", "Frictionless Cart", "Fast API Response"],
@@ -61,13 +61,13 @@ const projects = [
     tagline:
       "Secure, multi-tenant campus operating system empowering educational institutions with biometric attendance analytics, AI risk radar & admissions CRM.",
     category: "Enterprise & Systems",
-    badge: "Multi-Tier Campus Operating System",
+    badge: "Campus Operating System",
     coverImage: erp1,
     techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT RBAC", "Tailwind CSS"],
     highlights: ["Multi-Tenant RBAC", "Biometric Analytics", "Admissions CRM"],
     liveUrl: "https://digvijayp.netlify.app/",
     githubUrl: "https://github.com/imdigvijaysingh",
-    statusBadge: "Campus OS 🏢",
+    statusBadge: "Enterprise ERP 🏢",
     glowColor: "from-purple-500/10 via-indigo-500/5 to-transparent",
   },
   {
@@ -77,7 +77,7 @@ const projects = [
     tagline:
       "Real-time social architecture with normalized 16MB-safe MongoDB collections, UUID idempotent messaging, and dual-token JWT sessions.",
     category: "Full Stack MERN",
-    badge: "Full-Stack Social Platform",
+    badge: "Social Platform",
     coverImage: work4,
     techStack: ["React.js", "Node.js", "Express.js", "MongoDB Atlas", "JWT Auth", "ImageKit", "Tailwind CSS"],
     highlights: ["UUID Idempotent Sync", "Zero-Cost Feed Engine", "< 16MB BSON Safe"],
@@ -93,7 +93,7 @@ const projects = [
     tagline:
       "Machine learning powered multilingual text analysis platform with sub-120ms syntactic inference and 97.4% accuracy across 22+ languages.",
     category: "AI & ML",
-    badge: "AI/ML Natural Language Processing",
+    badge: "AI/ML Classifier",
     coverImage: work3,
     techStack: ["Next.js", "Python", "Flask", "Scikit-Learn", "Tailwind CSS", "Vercel"],
     highlights: ["22+ Languages", "97.4% Model Accuracy", "< 120ms Latency"],
@@ -109,7 +109,7 @@ const projects = [
     tagline:
       "Ground-up institutional SPA architecture that slashed load times from 9.5s to 0.3s (31x faster) with 95% reduced network overhead.",
     category: "Enterprise & Systems",
-    badge: "Sub-Second High-Performance SPA",
+    badge: "High-Speed React SPA",
     coverImage: work1,
     techStack: ["React SPA", "Tailwind CSS", "HTTP/2 Multiplexing", "Technical SEO", "Netlify"],
     highlights: ["0.3s Load Time", "-95% Requests", "100/100 SEO"],
@@ -153,7 +153,7 @@ export default function Work() {
           </p>
 
           {/* Interactive Category Filter Pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mt-8">
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-2 px-1 -mx-2 sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-visible sm:gap-2.5 mt-6 sm:mt-8">
             {categories.map((category) => {
               const active = selectedCategory === category;
               const count =
@@ -165,15 +165,15 @@ export default function Work() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 flex items-center gap-1.5 ${
+                  className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap shrink-0 transition-all duration-300 flex items-center gap-1.5 ${
                     active
-                      ? "bg-gradient-to-r from-[#9333ea] via-[#c026d3] to-[#ea580c] text-white shadow-md shadow-purple-500/25 scale-[1.03]"
-                      : "bg-white/80 dark:bg-gray-900/80 text-gray-700 dark:text-gray-300 border border-gray-200/80 dark:border-white/10 hover:border-purple-300 dark:hover:border-purple-500/40 hover:text-purple-600 dark:hover:text-purple-400"
+                      ? "bg-gradient-to-r from-[#9333ea] via-[#c026d3] to-[#ea580c] text-white shadow-md shadow-purple-500/25 scale-[1.02]"
+                      : "bg-white/90 dark:bg-gray-900/90 text-gray-700 dark:text-gray-300 border border-gray-200/80 dark:border-white/10 hover:border-purple-300 dark:hover:border-purple-500/40 hover:text-purple-600 dark:hover:text-purple-400"
                   }`}
                 >
                   <span>{category}</span>
                   <span
-                    className={`text-[11px] px-1.5 py-0.2 rounded-full ${
+                    className={`text-[11px] px-1.5 py-0.5 rounded-full ${
                       active
                         ? "bg-white/20 text-white"
                         : "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
@@ -189,17 +189,17 @@ export default function Work() {
       </Reveal>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 sm:gap-8 mb-14">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 lg:gap-8 mb-14">
         {filteredProjects.map((project, index) => (
           <Reveal key={project.id} delay={index * 100}>
-            <div className="group h-full rounded-3xl bg-white/80 dark:bg-gray-900/80 border border-gray-200/80 dark:border-white/10 shadow-lg shadow-purple-500/5 hover:shadow-2xl hover:border-purple-300 dark:hover:border-purple-500/40 backdrop-blur-xl transition-all duration-300 flex flex-col overflow-hidden relative">
+            <div className="group h-full rounded-2xl sm:rounded-3xl bg-white/80 dark:bg-gray-900/80 border border-gray-200/80 dark:border-white/10 shadow-lg shadow-purple-500/5 hover:shadow-2xl hover:border-purple-300 dark:hover:border-purple-500/40 backdrop-blur-xl transition-all duration-300 flex flex-col overflow-hidden relative">
               {/* Soft ambient background glow */}
               <div
                 className={`absolute top-0 right-0 w-80 h-80 bg-gradient-to-br ${project.glowColor} rounded-full blur-3xl pointer-events-none -z-10 group-hover:scale-125 transition-transform duration-500`}
               />
 
               {/* Card Image Banner */}
-              <div className="relative w-full aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] lg:aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-gray-800">
                 <Image
                   src={project.coverImage}
                   alt={project.title}
@@ -213,28 +213,28 @@ export default function Work() {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-gray-950/20 to-transparent pointer-events-none" />
 
                 {/* Top Badges */}
-                <div className="absolute top-4 left-4 right-4 flex items-center justify-between gap-2 z-10 pointer-events-none">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md bg-gray-950/70 text-white border border-white/20 shadow-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-purple-400" />
-                    <span>{project.badge}</span>
+                <div className="absolute top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 flex items-center justify-between gap-2 z-10 pointer-events-none">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold backdrop-blur-md bg-gray-950/75 text-white border border-white/20 shadow-sm truncate max-w-[65%] sm:max-w-none">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
+                    <span className="truncate">{project.badge}</span>
                   </span>
 
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-[11px] font-bold backdrop-blur-md bg-black/70 text-white/90 border border-white/20 shadow-sm">
+                  <span className="inline-flex items-center px-2.5 sm:px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-bold backdrop-blur-md bg-black/75 text-white/90 border border-white/20 shadow-sm shrink-0">
                     {project.statusBadge}
                   </span>
                 </div>
 
                 {/* Quick Action Floating Links (Bottom-Right of Image) */}
-                <div className="absolute bottom-3 right-3 flex items-center gap-2 z-10">
+                <div className="absolute bottom-2.5 right-2.5 sm:bottom-3 sm:right-3 flex items-center gap-1.5 sm:gap-2 z-10">
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2.5 rounded-full bg-white/90 dark:bg-gray-900/90 text-gray-800 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 hover:scale-110 active:scale-95 transition-all shadow-md backdrop-blur-md border border-white/20"
+                      className="p-2 sm:p-2.5 rounded-full bg-white/90 dark:bg-gray-900/90 text-gray-800 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 hover:scale-110 active:scale-95 transition-all shadow-md backdrop-blur-md border border-white/20"
                       title="Open Live Platform"
                     >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                      <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                       </svg>
                     </a>
@@ -245,10 +245,10 @@ export default function Work() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2.5 rounded-full bg-white/90 dark:bg-gray-900/90 text-gray-800 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 hover:scale-110 active:scale-95 transition-all shadow-md backdrop-blur-md border border-white/20"
+                      className="p-2 sm:p-2.5 rounded-full bg-white/90 dark:bg-gray-900/90 text-gray-800 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 hover:scale-110 active:scale-95 transition-all shadow-md backdrop-blur-md border border-white/20"
                       title="View GitHub Repository"
                     >
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -261,14 +261,14 @@ export default function Work() {
               </div>
 
               {/* Card Body */}
-              <div className="p-6 sm:p-7 flex flex-col flex-1 justify-between gap-5">
+              <div className="p-4 sm:p-6 lg:p-7 flex flex-col flex-1 justify-between gap-3.5 sm:gap-5">
                 <div>
                   {/* Title & Arrow */}
                   <Link href={`/projects/${project.slug}`} className="group/title block">
-                    <h3 className="text-xl sm:text-2xl font-bold font-Outfit text-gray-900 dark:text-white group-hover/title:text-purple-600 dark:group-hover/title:text-purple-400 transition-colors flex items-center justify-between gap-3">
-                      <span>{project.title}</span>
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold font-Outfit text-gray-900 dark:text-white group-hover/title:text-purple-600 dark:group-hover/title:text-purple-400 transition-colors flex items-center justify-between gap-2">
+                      <span className="line-clamp-1">{project.title}</span>
                       <svg
-                        className="w-5 h-5 flex-shrink-0 text-gray-400 group-hover/title:text-purple-600 dark:group-hover/title:text-purple-400 group-hover/title:translate-x-1 group-hover/title:-translate-y-1 transition-all"
+                        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-gray-400 group-hover/title:text-purple-600 dark:group-hover/title:text-purple-400 group-hover/title:translate-x-1 group-hover/title:-translate-y-1 transition-all"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -280,45 +280,50 @@ export default function Work() {
                   </Link>
 
                   {/* Tagline */}
-                  <p className="mt-2.5 text-sm sm:text-[15px] text-gray-600 dark:text-gray-300 leading-relaxed font-normal">
+                  <p className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed font-normal line-clamp-2">
                     {project.tagline}
                   </p>
 
                   {/* Highlights Chips */}
-                  <div className="flex flex-wrap gap-2 mt-4">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-3 sm:mt-3.5">
                     {project.highlights.map((item) => (
                       <span
                         key={item}
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-gray-100/80 dark:bg-gray-800/80 text-gray-800 dark:text-gray-200 border border-gray-200/60 dark:border-white/5"
+                        className="inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg text-[10px] sm:text-xs font-semibold bg-gray-100/80 dark:bg-gray-800/80 text-gray-800 dark:text-gray-200 border border-gray-200/60 dark:border-white/5"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-500 to-orange-500" />
-                        <span>{item}</span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-500 to-orange-500 shrink-0" />
+                        <span className="truncate">{item}</span>
                       </span>
                     ))}
                   </div>
 
                   {/* Tech Stack Pills */}
-                  <div className="flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-gray-100 dark:border-white/10">
-                    {project.techStack.map((tech) => (
+                  <div className="flex flex-wrap gap-1 sm:gap-1.5 mt-3 sm:mt-3.5 pt-2.5 sm:pt-3 border-t border-gray-100 dark:border-white/10">
+                    {project.techStack.slice(0, 4).map((tech) => (
                       <span
                         key={tech}
-                        className="px-2.5 py-1 rounded-md text-[11px] font-medium bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 border border-purple-200/50 dark:border-purple-500/20"
+                        className="px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[10px] sm:text-[11px] font-medium bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 border border-purple-200/50 dark:border-purple-500/20"
                       >
                         {tech}
                       </span>
                     ))}
+                    {project.techStack.length > 4 && (
+                      <span className="px-1.5 py-0.5 text-[10px] sm:text-[11px] font-medium text-gray-400 self-center">
+                        +{project.techStack.length - 4}
+                      </span>
+                    )}
                   </div>
                 </div>
 
                 {/* Bottom Card Action Footer */}
-                <div className="pt-4 border-t border-gray-100 dark:border-white/10 flex items-center justify-between gap-3">
+                <div className="pt-3 sm:pt-4 border-t border-gray-100 dark:border-white/10 flex items-center justify-between gap-2">
                   <Link
                     href={`/projects/${project.slug}`}
-                    className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 group/link"
+                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 group/link"
                   >
-                    <span>Read Architectural Case Study</span>
+                    <span>Read Case Study</span>
                     <svg
-                      className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover/link:translate-x-1 transition-transform"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -334,7 +339,7 @@ export default function Work() {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-semibold text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                        className="text-[11px] sm:text-xs font-semibold text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:text-white transition-colors"
                       >
                         Live Demo ↗
                       </a>
