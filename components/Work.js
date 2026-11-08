@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 
-import lipstick1 from "@/public/assets/projects/3d-lipstick-image-1.jpg";
-import ecommerce1 from "@/public/assets/projects/e-commerce-image-1.jpg";
-import erp1 from "@/public/assets/projects/ERP-image-1.jpg";
+import lipstick1 from "@/public/assets/projects/3d-lipstick-image-1.webp";
+import ecommerce1 from "@/public/assets/projects/e-commerce-image-1.webp";
+import erp1 from "@/public/assets/projects/ERP-image-1.webp";
 import work1 from "@/public/assets/work-1.webp";
 import work3 from "@/public/assets/work-3.webp";
 import work4 from "@/public/assets/work-4.webp";
